@@ -33,6 +33,10 @@
     {
       "library": "bootbox.js@5.5.2",
       "destination": "Assets/admin/libs/"
+    },
+    {
+      "library": "angular-cookies@1.8.3",
+      "destination": "Assets/admin/libs/"
     }
     
     

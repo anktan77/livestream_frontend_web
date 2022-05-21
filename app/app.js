@@ -2,7 +2,7 @@
     angular.module('liveStream', [
         'liveStream.products',
         'liveStream.common',
-        'liveStream.league'
+        'liveStream.league',
     ]).config(config);
     config.$inject = ['$stateProvider', '$urlRouterProvider'];
 

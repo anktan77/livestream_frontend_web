@@ -227,6 +227,8 @@
     <Content Include="Assets\admin\js\pages\dashboard.js" />
     <Content Include="Assets\admin\js\pages\dashboard2.js" />
     <Content Include="Assets\admin\js\pages\dashboard3.js" />
+    <Content Include="Assets\admin\libs\angular-cookies.js" />
+    <Content Include="Assets\admin\libs\angular-cookies.min.js" />
     <Content Include="Assets\admin\libs\angular-csp.css" />
     <Content Include="Assets\admin\libs\angular-csp.min.css" />
     <Content Include="Assets\admin\libs\angular-route.js" />
@@ -1724,6 +1726,7 @@
     <Content Include="Assets\admin\libs\bower-material-master\modules\scss\angular-material.scss" />
     <Content Include="Assets\admin\libs\bower-material-master\package.json" />
     <Content Include="Assets\admin\libs\bower-material-master\README.md" />
+    <Content Include="Assets\admin\libs\angular-cookies.min.js.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -1747,6 +1750,7 @@
     <Content Include="Views\Login\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="app\shared\const\" />
     <Folder Include="app\shared\directives\" />
     <Folder Include="App_Data\" />
     <Folder Include="UploadFile\" />
