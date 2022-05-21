@@ -11,17 +11,17 @@
         $scope.pageChangeHandler = pageChangeHandler;
         $scope.deleteProduct = deleteProduct;
         $scope.getProduct = getProduct;
-        var baseUrl = "http://127.0.0.1:8097/api/Customers/Getcustomers";
+
+
+        var baseUrl = "http://127.0.0.1:8098/api/Customers/Getcustomers";
         function getProduct() {
             $http.get(baseUrl)
                 .then(function (response) {
                     $scope.products = response.data;
                     $scope.totalCount = response.data.length;
                     notificationService.displayInfo("Có tất cả " + $scope.totalCount + " sản phẩm");
-                    console.log("OK:", response.data);
                 }).catch(function (response) {
                     notificationService.displayError("Load không thành công");
-                    console.log("ERROR:", response);
                 });
         }
        
@@ -66,10 +66,9 @@
                         else {
                             notificationService.displaySuccess("Tìm kiếm thành công , có tất cả " + $scope.totalCount + " sản phẩm");
                         }                       
-                        console.log("OK:", response.data);
+                        
                     }).catch(function (response) {
                         notificationService.displayWarning("Không có kết quả cần tìm");
-                        console.log("ERROR:", response);
                     });
             }
            
@@ -80,20 +79,15 @@
         }
 
         function deleteProduct(Id) {
-
             $ngBootbox.confirm('Bạn có chắc chắn muốn xóa Id: ' + Id).then(function () {
                 $http.delete('http://127.0.0.1:8097/api/Customers/DeleteCustomer?id=' + Id)
                     .then(function (response) {
                         notificationService.displaySuccess("Xóa thành công");
                         getProduct();
-                        console.log("OK:", response.data);
                     }).catch(function (response) {
                         console.log("ERROR:", response);
                     });
-            });
-
-
-            
+            });           
         }
 
         getProduct();

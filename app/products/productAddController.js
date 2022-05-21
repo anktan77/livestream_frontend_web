@@ -35,22 +35,6 @@
                     notificationService.displayError("Thêm không thành công");
                     console.log("ERROR:", response);
                 });
-        }
-        /*uploadFile();*/
-        //function chooseImage() {
-        //    CKFinder.popup({
-        //        chooseFiles: true,
-        //        width: 800,
-        //        height: 600,
-        //        onInit: function (finder) {
-        //            finder.on('files:choose', function (evt) {
-        //                var file = evt.data.files.first();
-
-        //                $scope.product.ImageView = file.getUrl();
-        //            });
-        //        }
-        //    });
-        //}
-        
+        }      
     }
 })(angular.module('liveStream.products'));

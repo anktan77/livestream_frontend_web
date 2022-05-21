@@ -8,7 +8,7 @@
         $scope.userNotActive = 0;
         $scope.userActive = 0;
         function getTotalPerson() {
-            $http.get('http://127.0.0.1:8097/api/Customers/Getcustomers')
+            $http.get('http://127.0.0.1:8098/api/Customers/Getcustomers')
                 .then(function (response) {
                     angular.forEach(response.data, function (value, key) {
                         if (value.Status === 0) {

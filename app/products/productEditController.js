@@ -11,7 +11,6 @@
         $scope.SelectFile = function (e) {
             var reader = new FileReader();
             reader.onload = function (e) {
-                /*$scope.PreviewImage = e.target.result;*/
                 $scope.products.ImageView = e.target.result;
                 $scope.$apply();
             };
